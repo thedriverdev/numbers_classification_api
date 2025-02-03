@@ -26,7 +26,7 @@ and returns a fun fact about the number using the Numbers API.
 ### Endpoint:
 
 GET
-api/NumberClassification/classify-number?number=<number>
+api/NumberClassification/classify-number?number=666
 
 Response Format (200 OK)
 ```json
@@ -42,12 +42,20 @@ Response Format (200 OK)
 }
 
 ```
+GET
+api/NumberClassification/classify-number?number=God
 
 Response Format (400 Bad Request)
 ```json
 {
-  "number": <string>,
+  "number": "Jesus",
   "error": true
 }
 
 ```
+
+## Author
+
+Alfred Mamman Odey
+TheDriverDev
+HNG12 Backend Intern

@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace NumberClassificationAPI.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/classify-number")]
     [ApiController]
     public class NumberClassificationController : ControllerBase
     {
@@ -13,7 +13,7 @@ namespace NumberClassificationAPI.Controllers
             _httpClient = new HttpClient();
         }
 
-        [HttpGet("classify-number")]
+        [HttpGet]
         public async Task<IActionResult> Get([FromQuery] string number)
         {
 
