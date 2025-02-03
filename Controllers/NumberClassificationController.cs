@@ -99,7 +99,7 @@ namespace NumberClassificationAPI.Controllers
             if (response.IsSuccessStatusCode)
             {
                 var json = await response.Content.ReadAsStringAsync();
-                dynamic data = Newtonsoft.Json.JsonConvert.DeserializeObject(json);
+                dynamic? data = Newtonsoft.Json.JsonConvert.DeserializeObject(json);
 
                 return data.text;
             }
