@@ -1,0 +1,9 @@
+﻿# Ignore the following files and folders
+
+.vs/
+*.csproj.user
+*.http
+Properties/
+*.json
+bin/
+obj/
